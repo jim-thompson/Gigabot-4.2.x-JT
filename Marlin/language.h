@@ -209,6 +209,16 @@
 #define MSG_ERR_LONG_EXTRUDE_STOP           " too long extrusion prevented"
 #define MSG_HOTEND_TOO_COLD                 "Hotend too cold"
 
+// Re:3D-specific messages for filament change handling. Changing the
+// message text is OK, but do *not* change the Rxxx code number.
+#define MSG_RE3D_FILAMENT_CHANGE_INIT       "R301 Wait for start of the filament change..."
+#define MSG_RE3D_FILAMENT_CHANGE_INSERT     "R302 Insert filament and press button to continue."
+#define MSG_RE3D_FILAMENT_CHANGE_HEAT       "R303 Press button to heat nozzle"
+#define MSG_RE3D_FILAMENT_CHANGE_HEATING    "R304 Heating nozzle, please wait..."
+#define MSG_RE3D_FILAMENT_CHANGE_PURGE	    "R305 Wait for filament purge..."
+#define MSG_RE3D_FILAMENT_CHANGE_CONTINUE   "R306 Press button to continue."
+#define MSG_RE3D_FILAMENT_CHANGE_RESUME     "R307 Wait for print to resume."
+
 #define MSG_FILAMENT_CHANGE_HEAT            "Press button (or M108) to heat nozzle"
 #define MSG_FILAMENT_CHANGE_INSERT          "Insert filament and press button (or M108)"
 #define MSG_FILAMENT_CHANGE_HEAT_LCD        "Press button to heat nozzle"
